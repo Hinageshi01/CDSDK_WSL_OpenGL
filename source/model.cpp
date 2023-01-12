@@ -17,4 +17,3 @@ void GLModel::LoadModel(const char* path) {
     processor.Run();
     m_meshes = consumer.GetMeshes();
 }
-

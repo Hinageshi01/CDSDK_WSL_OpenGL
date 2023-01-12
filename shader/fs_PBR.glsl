@@ -238,5 +238,6 @@ void main()
 	
 	// ------------------------------------ Fragment Color -----------------------------------------
 	
-	fragColor = vec4(dirColor + envColor, 1.0);
+	//fragColor = vec4(dirColor + envColor, 1.0);
+	fragColor = vec4(0.0, 0.0, 0.0, 1.0);
 }
