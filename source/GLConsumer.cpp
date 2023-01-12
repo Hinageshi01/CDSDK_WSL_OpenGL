@@ -67,7 +67,7 @@ void GLConsumer::Execute(const cd::SceneDatabase* pSceneDatabase) {
 			textures.insert(textures.end(), typeTextures.begin(), typeTextures.end());
 		}
 
-		m_meshes.emplace_back(GLMesh(vertices, indices, textures));
+		m_meshes.emplace_back(GLMesh(cd::MoveTemp(vertices), cd::MoveTemp(indices), cd::MoveTemp(textures)));
 	}
 }
 

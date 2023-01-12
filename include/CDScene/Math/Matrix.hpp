@@ -56,7 +56,7 @@ public:
 		c3[1] = position.y;
 		c3[2] = position.z;
 
-		return Matrix<T, 4, 4>(cd::MoveTemp(c0), cd::MoveTemp(c1), cd::MoveTemp(c2), cd::MoveTemp(c3));
+		return TMatrix<T, 4, 4>(cd::MoveTemp(c0), cd::MoveTemp(c1), cd::MoveTemp(c2), cd::MoveTemp(c3));
 	}
 
 	template<Handedness Hand>

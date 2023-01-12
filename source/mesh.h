@@ -22,7 +22,7 @@ struct GLTexture {
 
 class GLMesh {
 public:
-    GLMesh(std::vector<GLVertex> &vertices, std::vector<unsigned int> &indices, std::vector<GLTexture> &textures);
+    GLMesh(std::vector<GLVertex> vertices, std::vector<unsigned int> indices, std::vector<GLTexture> textures);
 
     void Draw(Shader &shader) const;
 
